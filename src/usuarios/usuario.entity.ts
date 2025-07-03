@@ -8,7 +8,7 @@ export class Usuario {
     @Column({ unique: true })
     correo: string;
 
-    @Column({ nullable: true })
+    @Column({ type: 'varchar', nullable: true })
     contrasena: string | null;
 
     @Column({ default: 'usuario' })
